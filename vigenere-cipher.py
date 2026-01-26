@@ -25,7 +25,7 @@ def vigenere_cipher(message, key, method):
     if method.lower() == "encrypt":
         for char_message, key_char in zip(message, key_array):
             char_index = alphabet.index(char_message)
-            char_decrypted = char_index + key_char
+            char_decrypted = (char_index + key_char) % len(alphabet)
             message_encrypted += alphabet[char_decrypted]
         print(f"Encrypted message: \t{message_encrypted}")
 
