@@ -1,8 +1,8 @@
-### Vigenere Cipher
+### Substitution Cipher
 
 import string
 
-def vigenere_cipher(message, key, method):
+def substitution_cipher(message, key, method):
     message = message.replace(" ","").upper()
     key = key.upper()
     alphabet = list(string.ascii_uppercase)
@@ -36,9 +36,9 @@ def vigenere_cipher(message, key, method):
         print(f"Decrypted message: \t{message_decrypted}")
 
 if __name__ == '__main__':
-    print("Welcome to Vigenere Cipher")
-    message = input("Enter your message: ")     # NIVU QV JR DTTS ULIFI FOI KIVVF
+    print("Welcome to Substitution Cipher")
+    message = input("Enter your message: ")     # WHCUHFWXOWHUQXOMOMQVSQWAMWHCUHFXOLNWXQMQVSQWAWMQLN
     key = input("Enter your key: ")
     method = input("Enter your method (Encrypt/Decrypt): ")
-    vigenere_cipher(message, key, method)
+    substitution_cipher(message, key, method)
 

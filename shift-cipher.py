@@ -24,5 +24,8 @@ def shift_cipher(message, key, method):
         print(f"Decrypted message: {message_decrypted}")
 
 if __name__ == '__main__':
-    shift_cipher('dhnyvgl', 13, 'decrypt')
-
+    print("Welcome to Shift Cipher")
+    message = input("Enter your message: ")
+    key = int(input("Enter your key: "))
+    method = input("Enter your method (Encrypt/Decrypt): ")
+    shift_cipher(message, key, method)
