@@ -7,8 +7,6 @@ def vigenere_cipher(message, key, method):
     key = key.upper()
     alphabet = list(string.ascii_uppercase)
 
-    # alphabet_encrypt = alphabet[key:] + alphabet[:key]
-    # alphabet_decrypt = alphabet[-key:] + alphabet[:-key]
     message_encrypted = ""
     message_decrypted = ""
 
