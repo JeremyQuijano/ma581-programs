@@ -1,6 +1,5 @@
-### Vigenere Cipher
+### Vigenere Cipher Brute Force
 
-### Shift Ciper Program
 import string
 import itertools
 

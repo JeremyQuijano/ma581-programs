@@ -1,4 +1,5 @@
 ### Shift Ciper Program
+
 import string
 
 def shift_cipher(message, key, method):
